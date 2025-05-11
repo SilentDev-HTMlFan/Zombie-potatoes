@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+#game {
+    display: block;
+    margin: 20px auto;
+    background: darkgreen;
+    border: 4px ridge saddlebrown;
+}
+
+/* Score display (top Left) */
+#ui {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-size: 24px;
+    background: rgba(0,0,0,0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* controls display(bottom right) */
+#controlsDisplay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    background: rgba(0,0,0,0.7);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: right;
+    line-height: 1.5;
+}
+
+#controlsDisplay div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+/*start screen*/
+#startScreen {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*button*/
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background: limegreen;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover{
+    transform: scale(1.05);
+    background: forestgreen;
+}
